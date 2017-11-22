@@ -1,0 +1,41 @@
+//big button element
+.big-button {
+    background: $purpel;
+    border: none;
+    border-bottom: .6rem solid darken($purpel, $amount: 10%);
+    color: white;
+    font-weight: bold;
+    font-size: $l-size;
+    width: 100%;
+    margin: 0 0 $s-size 0;
+    padding: 2.4rem
+}
+
+.big-button:disabled {
+    opacity: 0.5;
+}
+
+//button element
+.button {
+    background: $purpel;
+    border: none;
+    border-bottom: 0.2rem solid darken($purpel, $amount: 10%);
+    color: white;
+    font-weight: 500;
+    padding: $s-size;
+}
+
+//button modifier
+.button--link {
+    background: none;
+    border: white;
+    color: $off-white;
+    padding: 0;
+}
+
+@media (min-width: $descktop-breakpoint) {
+    // this targets any device that has a width of 45rem or bigger 
+    .big-button {
+        margin: 0 0 $xl-size 0;
+    }
+}

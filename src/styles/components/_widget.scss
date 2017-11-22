@@ -1,0 +1,30 @@
+//widget Header 
+.widget-header {
+    background: $blue;
+    color: $off-white;
+    display: flex; // this is flexbox , a dynamic way of calculating the width of a component 
+    justify-content: space-between; // this disturbute the space between the elements which pushes then to the right and the left [element ==== element]
+    //justify-content: space-around; // this disturbutes the space around the elements ==> [==element==element==]
+    padding: $m-size;
+}
+
+//element selector
+.widget-header__h3 {
+    margin: 0;
+}
+
+//widget 
+.widget {
+    background: $light-blue;
+    margin-bottom: $xl-size;
+}
+
+//widget message
+.widget__message {
+    color: $off-white;
+    // display: flex;
+    // justify-content: space-around;
+    text-align: center; // anothe rway of centering the content if its a text 
+    padding: $l-size;
+    border-bottom: 0.2rem solid lighten($light-blue, $amount: 10%);
+}

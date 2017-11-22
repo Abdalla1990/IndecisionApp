@@ -1,0 +1,36 @@
+//add option error
+.add-option-error {
+    color: red;
+    text-align: center;
+    size: 2rem;
+    font-style: italic;
+    padding: $s-size $s-size;
+    margin: $m-size 0 0 0;
+}
+
+.add-option {
+    display: flex;
+    flex-direction: column; // stack the elements based on columns ( for mobile )
+    padding: $s-size;
+}
+
+.add-option__input {
+    flex-grow: 1;
+    padding: $s-size;
+    background: $dark-blue;
+    border: none;
+    border-bottom: .4rem solid darken($color: $dark-blue, $amount: 10%);
+    margin: 0 0 $s-size 0; // top right buttom left 
+    color: $off-white;
+}
+
+// media query is used to test certain elements on diffrent rendering screens 
+@media (min-width: $descktop-breakpoint) {
+    // this targets any device that has a width of 45rem or bigger 
+    .add-option {
+        flex-direction: row; // stack the elements based on the rows (for PC)
+    }
+    .add-option__input {
+        margin: 0 $s-size 0 0;
+    }
+}

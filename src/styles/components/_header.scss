@@ -1,0 +1,29 @@
+//BEM block element modifier (www.getbem.com)
+//block
+.header {
+    background: $off-black; // anything starts with $ that means its a variable and its mostely defined in settings or in the top of the file.
+    margin: 0 0 $s-size 0;
+    color: white;
+    padding: $m-size;
+}
+
+//element
+.header__title {
+    font-size: $l-size;
+    margin-left: 0;
+}
+
+//element
+.header__subtitle {
+    color: $off-white;
+    font-size: $m-size;
+    font-weight: 500;
+    margin: 0;
+}
+
+@media (min-width: $descktop-breakpoint) {
+    // this targets any device that has a width of 45rem or bigger 
+    .header {
+        margin: 0 0 $xl-size 0;
+    }
+}
