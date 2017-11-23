@@ -9,8 +9,8 @@ module.exports = {
     module: { // any third party library 
         rules: [{
             loader: 'babel-loader', // babel which converts the code from jsx to react 
-            test: /\.js$/, // anyfile that ends with .js
-            exclude: /node_modules/ // dont read these files 
+            test: /\.js$/, // any file that ends with .js
+            exclude: /node_modules/ // don't read these files 
         },{
             test:/\.s?css$/, // load the scss styles the S is optional , so its either scss or css 
             use:['style-loader',// use these 2 loaders when runing the code. 
